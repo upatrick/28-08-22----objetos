@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let alunos = [
+                {
+                    nome: "Roger",
+                    idade: 40,
+                    skills: ["javascript", "php", "react"],
+                },
+                {
+                    nome: "Marcelo",
+                    idade: 25,
+                    skills: ["javascript", "typescript", "java"],
+                },
+                {
+                    nome: "Manoel",
+                    idade: 43,
+                    skills: ["css", "html", "json"],
+                },
+                {
+                    nome: "Marcelo",
+                    idade: 17,
+                    skills: ["css", "html", "typescript"],
+                },
+                {
+                    nome: "Pedro",
+                    idade: 18,
+                    skills: ["php", "javascript", "typescript"],
+                },
+            ];
+
+            function findSkill(aln, sk) {
+                const retorno = aln.filter((value) => {
+                    return value.skills.includes(sk);
+                });
+                console.log(retorno);
+            }
+            findSkill(alunos, "php");
+        </script>
+    </body>
+</html>
